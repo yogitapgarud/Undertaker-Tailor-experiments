@@ -18,8 +18,11 @@ sudo add-apt-repository ppa:webupd8team/y-ppa-manager
 
 sudo apt-get update
 sudo apt-get install y-ppa-manager
+#run y-ppa-manager and add missing keys
 
 #change the line in following script to upstart for Ubuntu-14.04
 #sudo vim /usr/local/bin/undertaker-tracecontrol-prepare-ubuntu
 
 sudo apt-get install linux-image-`uname -r`-dbgsym
+
+sudo undertaker-tracecontrol-prepare-ubuntu
