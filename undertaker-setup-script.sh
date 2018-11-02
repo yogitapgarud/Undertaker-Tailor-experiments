@@ -26,3 +26,8 @@ sudo apt-get install y-ppa-manager
 sudo apt-get install linux-image-`uname -r`-dbgsym
 
 sudo undertaker-tracecontrol-prepare-ubuntu
+
+#To add new initramfs for booting, run this command
+sudo update-grub
+
+#Keep Pressing ESc to get to grub2 menu and follow instructions to add .ftrace for initrd to start tracing from boot
